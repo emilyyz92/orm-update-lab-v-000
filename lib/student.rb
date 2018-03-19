@@ -7,12 +7,12 @@ class Student
   #  with DB[:conn]
 
   @@all = []
-  
+
   def initialize(id=nil, name, grade)
     @name = name
     @grade = grade
     @id = id
-    self<<@@all
+    @@all<<self
   end
 
   def self.all
