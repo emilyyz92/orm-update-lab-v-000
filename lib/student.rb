@@ -9,6 +9,7 @@ class Student
     @name = name
     @grade = grade
     @id = id
+    self<<@all
   end
 
   def self.create_table
