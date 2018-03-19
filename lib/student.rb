@@ -14,6 +14,10 @@ class Student
     self<<@@all
   end
 
+  def self.all
+    @@all
+  end
+
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students (
