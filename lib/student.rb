@@ -51,7 +51,7 @@ class Student
   end
 
   def self.find_by_name(name)
-    DB[:conn].execute("SELECT * FROM students WHERE name = ?", name)
+    DB[:conn].execute("SELECT * FROM students WHERE name = ?", name).first
   end
 
 end
