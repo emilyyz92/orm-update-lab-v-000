@@ -39,4 +39,7 @@ class Student
     DB[:conn].execute(sql, @name,@grade,@id)
   end
 
+  def self.create
+  end
+
 end
